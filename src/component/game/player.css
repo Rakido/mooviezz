@@ -1,0 +1,17 @@
+.player-input{
+  padding: 25px;
+  width: calc(100% - 50px);
+  border: none;
+  background-color: transparent;
+  font-size: 4.6rem;
+  color:white;
+  margin-top: -30px;
+}
+
+.counter {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  color: black;
+}

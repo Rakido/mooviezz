@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="61" viewBox="0 0 54 61">
+  <defs>
+    <circle id="chronometre-b" cx="23" cy="31" r="23"/>
+    <filter id="chronometre-a" width="126.1%" height="126.1%" x="-13%" y="-8.7%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+      <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feMorphology in="SourceAlpha" radius="2" result="shadowInner"/>
+      <feOffset dy="2" in="shadowInner" result="shadowInner"/>
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(4 1)">
+    <use fill="#000" filter="url(#chronometre-a)" xlink:href="#chronometre-b"/>
+    <use stroke="#FFF" stroke-width="4" xlink:href="#chronometre-b"/>
+    <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M16.5,1.5 L30.5,1.5"/>
+    <path stroke="#FFF" stroke-linecap="square" stroke-width="4" d="M23,3.48335181 L23,7.53100084"/>
+  </g>
+</svg>

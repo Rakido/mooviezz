@@ -1,0 +1,27 @@
+/*.nav-link {
+	font-size: 1.6rem ;
+	color: #969696 !important;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin-right: 2.5rem;  
+}
+*/
+.nav-link a {
+	font-size: 1.6rem ;
+	color: #969696 !important;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin-right: 2.5rem;
+	text-decoration: none !important;  
+}
+
+.header {
+	height:60px;
+
+}
+
+
+.app-logo {
+	transform: scale(0.95);
+	margin-left: 2.6rem;
+}
